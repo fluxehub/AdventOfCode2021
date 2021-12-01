@@ -6,7 +6,9 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <Compile Include="Common.fs" />
         <Compile Include="Part1.fs" />
+        <Compile Include="Part2.fs" />
         <Compile Include="Program.fs" />
     </ItemGroup>
 

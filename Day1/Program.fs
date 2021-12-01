@@ -1,3 +1,3 @@
 open Day1
 
-Part1.solution ()
+Part2.solution "input.txt"
