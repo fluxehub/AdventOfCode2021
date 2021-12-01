@@ -1,5 +1,5 @@
 # AdventOfCode2021
-Solutions for Advent of Code 2021. My goal is to try and use a different language every day.
+Solutions for Advent of Code 2021, using a different language every day.
 
 Day 1 - [F#](https://github.com/clavierpaul/AdventOfCode2021/tree/main/Day1)
 
