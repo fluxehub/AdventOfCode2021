@@ -1,12 +1,3 @@
-let input = System.IO.File.ReadAllLines("input.txt") |> Seq.ofArray
-let depthPairs =
-    input
-    |> Seq.map int // I have no clue why casting to int matters here but it does
-    |> Seq.pairwise
-let countIncreasing =
-    depthPairs
-    |> Seq.map (fun (a, b) -> a < b)
-    |> Seq.filter id
-    |> Seq.length
+open Day1
 
-printfn $"Number of increasing depth pairs: {countIncreasing}"
+Part1.solution ()
