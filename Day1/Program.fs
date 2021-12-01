@@ -1,4 +1,12 @@
+let input = System.IO.File.ReadAllLines("input.txt") |> Seq.ofArray
+let depthPairs =
+    input
+    |> Seq.map int // I have no clue why casting to int matters here but it does
+    |> Seq.pairwise
+let countIncreasing =
+    depthPairs
+    |> Seq.map (fun (a, b) -> a < b)
+    |> Seq.filter id
+    |> Seq.length
 
-
-// For more information see https://aka.ms/fsharp-console-apps
-printfn "Hello from F#"
+printfn $"Number of increasing depth pairs: {countIncreasing}"
