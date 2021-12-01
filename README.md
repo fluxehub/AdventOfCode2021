@@ -21,9 +21,9 @@ Languages left:
 - Pascal
 - Perl
 - PHP
-- Python
 - Racket
 - Rust
+- Scratch
 - Swift
 - Visual Basic
 - Zig
