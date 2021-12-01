@@ -7,4 +7,4 @@ let solution fileName =
         |> List.map List.sum
         |> countIncreasing
     
-    printfn $"Number of increasing depth pairs: {count}"
+    printfn $"Number of increasing depth windows: {count}"
