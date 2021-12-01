@@ -1,3 +1,3 @@
 // Unwieldy one-liners
-System.IO.File.ReadAllLines("input.txt") |> Array.map int |> Array.pairwise |> Array.map (fun (a, b) -> a < b) |> Array.filter id |> Array.length |> printfn "Number of increasing pairs: %d"
-System.IO.File.ReadAllLines("input.txt") |> Array.map int |> Array.windowed 3 |> Array.map Array.sum |> Array.pairwise |> Array.map (fun (a, b) -> a < b) |> Array.filter id |> Array.length |> printfn "Number of increasing windows: %d"
+System.IO.File.ReadAllLines("input.txt") |> Array.map int |> Array.pairwise |> Array.filter (fun (a, b) -> a < b) |> Array.length |> printfn "Number of increasing pairs: %d"
+System.IO.File.ReadAllLines("input.txt") |> Array.map int |> Array.windowed 3 |> Array.map Array.sum |> Array.pairwise |> Array.filter (fun (a, b) -> a < b) |> Array.length |> printfn "Number of increasing windows: %d"

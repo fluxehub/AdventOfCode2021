@@ -9,6 +9,5 @@ let readListOfInts fileName =
 let countIncreasing list =
     list
     |> List.pairwise
-    |> List.map (fun (a, b) -> a < b)
-    |> List.filter id
+    |> List.filter (fun (a, b) -> a < b)
     |> List.length
