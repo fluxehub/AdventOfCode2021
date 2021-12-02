@@ -2,19 +2,6 @@
 
 @implementation PartOne
 
-NSMutableArray* read_file(NSString* fileName) {
-    FILE* file = fopen([fileName UTF8String], "r");
-    NSMutableArray* lines = [NSMutableArray array];
-    char buffer[64];
-    
-    while (fgets(buffer, sizeof(char)*64, file) != NULL) {
-        NSString* line = [NSString stringWithUTF8String:buffer];
-        [lines addObject:line];
-    }
-    
-    return lines;
-}
-
 void translate(NSString* command, int* depth, int* distance) {
     NSArray* commandParts = [command componentsSeparatedByString:@" "];
     NSString* direction = commandParts[0];
@@ -32,8 +19,7 @@ void translate(NSString* command, int* depth, int* distance) {
     }
 }
 
-+ (void)solution:(NSString*) fileName {
-    NSMutableArray* lines = read_file(fileName);
++ (void)solution:(NSMutableArray*) lines {
     int depth = 0;
     int distance = 0;
     
