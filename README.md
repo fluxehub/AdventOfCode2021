@@ -1,7 +1,8 @@
 # AdventOfCode2021
-Solutions for Advent of Code 2021, using a different language every day.
+Solutions for Advent of Code 2021, using a different, randomly picked language every day.
 
 Day 1 - [F#](https://github.com/clavierpaul/AdventOfCode2021/tree/main/Day1)
+Day 2 - [Objective-C](https://github.com/clavierpaul/AdventOfCode2021/tree/main/Day2)
 
 Languages left:
 - C
@@ -16,7 +17,6 @@ Languages left:
 - Kotlin
 - LaTeX
 - RISC-V Assembly
-- Objective-C
 - OCaml
 - Pascal
 - Perl
