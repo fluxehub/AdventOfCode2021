@@ -4,7 +4,7 @@
 #import <Foundation/Foundation.h>
 
 @interface PartTwo : NSObject
-+ (void)solution:(NSMutableArray*) lines;
++ (void)solution:(NSArray*) lines;
 
 @end
 

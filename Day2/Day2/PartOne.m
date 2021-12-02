@@ -19,7 +19,7 @@ void translate(NSString* command, int* depth, int* distance) {
     }
 }
 
-+ (void)solution:(NSMutableArray*) lines {
++ (void)solution:(NSArray*) lines {
     int depth = 0;
     int distance = 0;
     

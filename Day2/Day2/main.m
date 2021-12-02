@@ -4,7 +4,7 @@
 #import "PartOne.h"
 #import "PartTwo.h"
 
-NSMutableArray* readFile(NSString* fileName) {
+NSArray* readFile(NSString* fileName) {
     FILE* file = fopen([fileName UTF8String], "r");
     NSMutableArray* lines = [NSMutableArray array];
     char buffer[64];
@@ -14,12 +14,12 @@ NSMutableArray* readFile(NSString* fileName) {
         [lines addObject:line];
     }
     
-    return lines;
+    return [lines copy];
 }
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        NSMutableArray* lines = readFile(@"input.txt");
+        NSArray* lines = readFile(@"input.txt");
         
         NSLog(@"Part One:");
         [PartOne solution:lines];

@@ -20,7 +20,7 @@ void doCommand(NSString* command, int* aim, int* depth, int* distance) {
     }
 }
 
-+ (void)solution:(NSMutableArray*) lines {
++ (void)solution:(NSArray*) lines {
     int aim = 0;
     int depth = 0;
     int distance = 0;
