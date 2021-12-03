@@ -34,7 +34,7 @@ begin
 
   for line in input do
     for i := 0 to length do
-      // String are 1-indexed ???????
+      // Strings are 1-indexed ???????
       if line[i + 1] = '0' then
         bitCount[i] := bitCount[i] - 1
       else

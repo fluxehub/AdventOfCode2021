@@ -26,7 +26,7 @@
       <FormatVersion Value="2"/>
       <Modes Count="0"/>
     </RunParams>
-    <Units Count="2">
+    <Units Count="3">
       <Unit0>
         <Filename Value="day3.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -36,6 +36,11 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="Part1"/>
       </Unit1>
+      <Unit2>
+        <Filename Value="part2.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Part2"/>
+      </Unit2>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
