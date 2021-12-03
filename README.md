@@ -23,9 +23,9 @@ Languages left:
 - OCaml
 - Perl
 - PHP
+- Python
 - Racket
 - Rust
-- Python
 - Swift
 - Visual Basic
 - Zig
