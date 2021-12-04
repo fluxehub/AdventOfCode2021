@@ -6,7 +6,12 @@ const ArrayList = std.ArrayList;
 const split = std.mem.split;
 const print = std.debug.print;
 
-fn run(allocator: *Allocator, filename: []const u8) !i32 {
+const Data = struct {
+    numbers: []i32,
+    boards: []*Board,
+};
+
+fn load(allocator: *Allocator, filename: []const u8) !Data {
     const file = try std.fs.cwd().openFile(filename, .{});
     defer file.close();
 
@@ -22,7 +27,6 @@ fn run(allocator: *Allocator, filename: []const u8) !i32 {
     var rawNumbers = std.mem.split(u8, firstLine, ",");
 
     var numbers = std.ArrayList(i32).init(allocator);
-    defer numbers.deinit();
 
     // It's kinda silly to discard the iterator just to build another one,
     // but I wanted the game methods to receive a list of numbers, not strings
@@ -34,20 +38,33 @@ fn run(allocator: *Allocator, filename: []const u8) !i32 {
     }
 
     var boards = std.ArrayList(*Board).init(allocator);
-    defer boards.deinit();
 
     while (try reader.readUntilDelimiterOrEof(&buf, '\n')) |_| {
         var board = try Board.fromReader(allocator, reader);
         try boards.append(board);
     }
+
+    return Data { .numbers = numbers.toOwnedSlice(), .boards = boards.toOwnedSlice() };
+}
+
+fn part1(allocator: *Allocator, filename: []const u8) !i32 {
+    var data = try load(allocator, filename);
+    defer allocator.free(data.boards);
+    defer allocator.free(data.numbers);
     
-    const winner = Game.run(boards.items, numbers.items);
+    const winner = Game.run(data.boards, data.numbers);
     const score = winner.board.score(winner.number);
 
-    // Free boards
-    for (boards.items) |board| {
-        allocator.destroy(board);
-    }
+    return score;
+}
+
+fn part2(allocator: *Allocator, filename: []const u8) !i32 {
+    var data = try load(allocator, filename);
+    defer allocator.free(data.boards);
+    defer allocator.free(data.numbers);
+    
+    const winner = try Game.findLastBoard(allocator, data.boards, data.numbers);
+    const score = winner.board.score(winner.number);
 
     return score;
 }
@@ -56,14 +73,23 @@ pub fn main() anyerror!void {
     const filename = "input.txt";
     var arena = std.heap.ArenaAllocator.init(std.heap.page_allocator);
     defer arena.deinit();
-
-    print("{d}", .{try run(&arena.allocator, filename)});
+    
+    print("Part 1: {d}\n", .{try part1(&arena.allocator, filename)});
+    print("Part 2: {d}", .{try part2(&arena.allocator, filename)});
 }
 
 test "Returns the correct winning score in test file" {
     const filename = "test.txt";
     var test_allocator = std.testing.allocator;
     
-    const result = try run(test_allocator, filename);
+    const result = try part1(test_allocator, filename);
     try std.testing.expect(result == 4512);
+}
+
+test "Returns the score for the last winning board in test file" {
+    const filename = "test.txt";
+    var test_allocator = std.testing.allocator;
+    
+    const result = try part2(test_allocator, filename);
+    try std.testing.expect(result == 1924);
 }

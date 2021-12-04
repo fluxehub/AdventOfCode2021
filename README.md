@@ -7,6 +7,8 @@ Day 2 - [Objective-C](https://github.com/clavierpaul/AdventOfCode2021/tree/main/
 
 Day 3 - [Free Pascal](https://github.com/clavierpaul/AdventOfCode2021/tree/main/Day3)
 
+Day 4 - [Zig](https://github.com/clavierpaul/AdventOfCode2021/tree/main/Day4)
+
 Languages left:
 - C
 - C#
@@ -28,4 +30,3 @@ Languages left:
 - Rust
 - Swift
 - Visual Basic
-- Zig

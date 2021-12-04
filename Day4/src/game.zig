@@ -130,3 +130,30 @@ pub fn run(boards: []*Board, numbers: []const i32) Winner {
 
     unreachable;
 }
+
+pub fn findLastBoard(allocator: *std.mem.Allocator, boards: []*Board, numbers: []const i32) !Winner {
+    var board_list = std.ArrayList(*Board).fromOwnedSlice(allocator, boards);
+    var round_winners = std.ArrayList(usize).init(allocator);
+    defer round_winners.deinit();
+
+    for (numbers) |number| {
+        for (board_list.items) |board, i| {
+            board.mark(number);
+            if (board.checkWin()) {
+                if (board_list.items.len == 1) {
+                    return Winner { .number = number, .board = board, };
+                }
+
+                try round_winners.append(i);
+            }
+        }
+
+        var i: usize = 0;
+        const winners = round_winners.items.len;
+        while (i < winners) : (i += 1) {
+            _ = board_list.orderedRemove(round_winners.pop());
+        }
+    }
+
+    unreachable;
+}
