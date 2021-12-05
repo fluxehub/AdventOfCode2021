@@ -1,7 +1,7 @@
 #lang racket
 
 (define (parse-line str)
-  (let ([parsed (car (regexp-match* #px"(\\d+),(\\d+) -> (\\d+),(\\d+)" str #:match-select cdr))])
+  (let ([parsed (regexp-match* #px"(\\d+)" str)])
     (map string->number parsed)))
 
 (define (find-line-direction x0 y0 x1 y1)
