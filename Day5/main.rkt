@@ -1,10 +1,5 @@
 #lang racket
 
-(define (p-dbg expr)
-  (begin
-    (displayln expr)
-    expr))
-
 (define (parse-line str)
   (let ([parsed (car (regexp-match* #px"(\\d+),(\\d+) -> (\\d+),(\\d+)" str #:match-select cdr))])
     (map string->number parsed)))
