@@ -13,9 +13,9 @@
          [dy (sgn (- y1 y0))]
          [xs (if (zero? dx) (make-list (+ 1 (abs (- y0 y1))) x0) (inclusive-range x0 x1 dx))]
          [ys (if (zero? dy) (make-list (+ 1 (abs (- x0 x1))) y0) (inclusive-range y0 y1 dy))])
-                (for-each (lambda (point)
-                            (hash-set! frequencies point (+ 1 (hash-ref frequencies point 0))))
-                          (map list xs ys))))
+    (for-each (lambda (point)
+                (hash-set! frequencies point (+ 1 (hash-ref frequencies point 0))))
+              (map list xs ys))))
 
 (define (straight? x0 y0 x1 y1) (or (= x0 x1) (= y0 y1)))
 
