@@ -11,6 +11,8 @@ Day 4 - [Zig](https://github.com/clavierpaul/AdventOfCode2021/tree/main/Day4)
 
 Day 5 - [Racket](https://github.com/clavierpaul/AdventOfCode2021/tree/main/Day5)
 
+Day 6 - [C](https://github.com/clavierpaul/AdventOfCode2021/tree/main/Day6)
+
 Languages left:
 - C
 - C#
