@@ -9,6 +9,8 @@ Day 3 - [Free Pascal](https://github.com/clavierpaul/AdventOfCode2021/tree/main/
 
 Day 4 - [Zig](https://github.com/clavierpaul/AdventOfCode2021/tree/main/Day4)
 
+Day 5 - [Racket](https://github.com/clavierpaul/AdventOfCode2021/tree/main/Day5)
+
 Languages left:
 - C
 - C#

@@ -1,51 +1,29 @@
 #lang racket
 
+(define input "input.txt")
+
+(define (get-lines input) (map parse-line (file->lines input)))
+
 (define (parse-line str)
   (let ([parsed (regexp-match* #px"(\\d+)" str)])
     (map string->number parsed)))
 
-(define (find-line-direction x0 y0 x1 y1)
-  (cond
-    [(= x0 x1) 'Vertical]
-    [(= y0 y1) 'Horizontal]
-    [else 'Angled]))
+(define (find-intersection-frequencies frequencies x0 y0 x1 y1)
+  (let* ([dx (sgn (- x1 x0))]
+         [dy (sgn (- y1 y0))]
+         [xs (if (zero? dx) (make-list (+ 1 (abs (- y0 y1))) x0) (inclusive-range x0 x1 dx))]
+         [ys (if (zero? dy) (make-list (+ 1 (abs (- x0 x1))) y0) (inclusive-range y0 y1 dy))])
+                (for-each (lambda (point)
+                            (hash-set! frequencies point (+ 1 (hash-ref frequencies point 0))))
+                          (map list xs ys))))
 
-; Finds the points along a horizontal or vertical line
-; Returns an empty list for lines that are not straight
-(define (points-along-line x0 y0 x1 y1)
-  (let ([direction (find-line-direction x0 y0 x1 y1)])
-    (case direction
-      ['Horizontal
-       (let ([start (min x0 x1)]
-             [end (+ 1 (max x0 x1))])
-         (for/list ([x (range start end)])
-           (list x y0)))]
-      ['Vertical
-       (let ([start (min y0 y1)]
-             [end (+ 1 (max y0 y1))])
-         (for/list ([y (range start end)])
-           (list x0 y)))]
-      [else '()])))
+(define (straight? x0 y0 x1 y1) (or (= x0 x1) (= y0 y1)))
 
-(define (find-point-intersection-frequencies all-points)
+(define (count-intersections lines)
   (let ([frequencies (make-hash)])
     (begin
-      (for-each (lambda (points)
-                  (for-each (lambda (point)
-                              (hash-set! frequencies point (+ 1 (hash-ref frequencies point 0))))
-                            points))
-                all-points)
+      (for-each (curry apply (curry find-intersection-frequencies frequencies)) lines)
+      (length (filter (lambda (frequency) (>= (cdr frequency) 2)) (hash->list frequencies))))))
 
-      frequencies)))
-
-(define (find-intersected-points input)
-  (let* ([lines (map parse-line (file->lines input))]
-         [points (map (curry apply points-along-line) lines)]
-         [frequencies (hash->list (find-point-intersection-frequencies points))])
-    (filter (lambda (frequency) (>= (cdr frequency) 2)) frequencies)))
-
-(define intersected-points (find-intersected-points "input.txt"))
-
-(begin
-  (for-each (lambda (point) (printf "~a: ~v\n" (car point) (cdr point))) intersected-points)
-  (printf "Count: ~v\n" (length intersected-points)))
+(printf "Part 1 count: ~v\n" (count-intersections (filter (curry apply straight?) (get-lines input))))
+(printf "Part 2 count: ~v\n" (count-intersections (get-lines input)))
