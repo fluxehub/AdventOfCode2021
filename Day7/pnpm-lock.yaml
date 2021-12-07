@@ -11,6 +11,7 @@ specifiers:
   react: ^17.0.2
   react-dom: ^17.0.2
   typescript: ^4.4.4
+  use-debounce: ^7.0.1
   vite: ^2.7.0
 
 dependencies:
@@ -20,6 +21,7 @@ dependencies:
   framer-motion: 4.1.17_react-dom@17.0.2+react@17.0.2
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
+  use-debounce: 7.0.1_react@17.0.2
 
 devDependencies:
   '@types/react': 17.0.37
@@ -2069,6 +2071,15 @@ packages:
         optional: true
     dependencies:
       '@types/react': 17.0.37
+      react: 17.0.2
+    dev: false
+
+  /use-debounce/7.0.1_react@17.0.2:
+    resolution: {integrity: sha512-fOrzIw2wstbAJuv8PC9Vg4XgwyTLEOdq4y/Z3IhVl8DAE4svRcgyEUvrEXu+BMNgMoc3YND6qLT61kkgEKXh7Q==}
+    engines: {node: '>= 10.0.0'}
+    peerDependencies:
+      react: '>=16.8.0'
+    dependencies:
       react: 17.0.2
     dev: false
 
