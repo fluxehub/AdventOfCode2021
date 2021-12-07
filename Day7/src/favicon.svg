@@ -1,15 +1,64 @@
-<svg width="410" height="404" viewBox="0 0 410 404" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M399.641 59.5246L215.643 388.545C211.844 395.338 202.084 395.378 198.228 388.618L10.5817 59.5563C6.38087 52.1896 12.6802 43.2665 21.0281 44.7586L205.223 77.6824C206.398 77.8924 207.601 77.8904 208.776 77.6763L389.119 44.8058C397.439 43.2894 403.768 52.1434 399.641 59.5246Z" fill="url(#paint0_linear)"/>
-<path d="M292.965 1.5744L156.801 28.2552C154.563 28.6937 152.906 30.5903 152.771 32.8664L144.395 174.33C144.198 177.662 147.258 180.248 150.51 179.498L188.42 170.749C191.967 169.931 195.172 173.055 194.443 176.622L183.18 231.775C182.422 235.487 185.907 238.661 189.532 237.56L212.947 230.446C216.577 229.344 220.065 232.527 219.297 236.242L201.398 322.875C200.278 328.294 207.486 331.249 210.492 326.603L212.5 323.5L323.454 102.072C325.312 98.3645 322.108 94.137 318.036 94.9228L279.014 102.454C275.347 103.161 272.227 99.746 273.262 96.1583L298.731 7.86689C299.767 4.27314 296.636 0.855181 292.965 1.5744Z" fill="url(#paint1_linear)"/>
-<defs>
-<linearGradient id="paint0_linear" x1="6.00017" y1="32.9999" x2="235" y2="344" gradientUnits="userSpaceOnUse">
-<stop stop-color="#41D1FF"/>
-<stop offset="1" stop-color="#BD34FE"/>
-</linearGradient>
-<linearGradient id="paint1_linear" x1="194.651" y1="8.81818" x2="236.076" y2="292.989" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FFEA83"/>
-<stop offset="0.0833333" stop-color="#FFDD35"/>
-<stop offset="1" stop-color="#FFA800"/>
-</linearGradient>
-</defs>
-</svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   width="586"
+   height="392"
+   viewBox="0 0 586.0000000000003 391.9999999999991"
+   enable-background="new 0 0 578 462"
+   xml:space="preserve"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="Crab-1.svg"><metadata
+     id="metadata8"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:date>2016</dc:date><dc:creator><cc:Agent><dc:title>Lazur</dc:title></cc:Agent></dc:creator><dc:description>Original raster images of this series were uploaded by NicholasJudy456 to openclipart embedded in svg-s (416 in total).  This is one of the refixes upon request by the original author.</dc:description><dc:contributor><cc:Agent><dc:title /></cc:Agent></dc:contributor><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs6" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     id="namedview4"
+     showgrid="false"
+     borderlayer="true"
+     inkscape:showpageshadow="false"
+     inkscape:zoom="1.415816326530612"
+     inkscape:cx="293"
+     inkscape:cy="196"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     showborder="true" /><path
+     style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ed1c24;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+     d="m 212.1838581988374,67.95968013796039 -3.9247881285334,50.53164715486762 -61.3248145083345,32.1342028023673 -34.5368613658564,34.098411163516 -0.3469055376424,3.8159609140655 -36.25162868362286,-12.3151465863025 14.57003258097761,-28.4462540866706 46.31188927525034,-7.1115635216676 21.2919404257463,-15.3072316010641 1.8397444362209,-21.7089843474051 -10.4252184719175,-52.73934050499509 -62.06071231518019,75.79747077229508 4.25652603162858,-95.1437059073426 -39.02687298476151,24.80374594142586 -13.00895766158721,37.46579806537112 7.63192182813119,25.49755701671073 16.13110750036814,23.7630293284993 -21.85504887146651,43.3631922052907 70.07491860374979,19.6001628767914 0,21.590865207232 -32.95602607602092,15.0076690140333 -32.08876223191514,-18.5594462638644 -4.16286645170792,18.2125407262221 36.94543975890772,23.9364820973206 34.51710099541146,-22.3754071779301 28.619706855492,27.2320847049226 -23.4161237908571,25.671009785532 -38.5065146782982,-22.8957654843935 -9.88680782280622,13.0089576615871 38.33306190947711,35.7312703771596 56.3721498668779,-39.0268729847618 34.3436483319301,17.3452768340684 -33.2085903550599,23.7280573134787 3.188890356116,25.6337724780093 -29.6812102376949,1.4717955489766 4.2927370178486,24.6525754453583 52.2487419886699,-13.0008606826268 -15.576502893336,-30.4171080121834 37.9891913572664,-24.9566685212973 27.2320847049227,0 6.5912052152045,27.2320847049228 12.4885993551236,-25.4975570167111 15.4130678106488,24.3259874948181 7.3589777448831,-21.0957362019982 20.1145391693472,21.8316339764865 10.7931673591619,-23.1807798963818 16.8029991841498,20.8504369438353 2.8209414688719,-20.6051376856727 40.3517279677757,-6.1324814540693 31.0303561575905,25.1431739616839 -16.3124006678242,34.2192465137064 42.4367716621594,4.9059851632555 7.9722258902901,-13.7367584571151 -27.5961665433116,-6.3777807122321 8.2175251484528,-24.4072761871956 -21.8556866770113,-25.1069629754641 21.3346905650032,-9.0195439787005 13.1824104304085,-3.8159609140656 31.5684039254521,34.5171009954117 43.5366449741119,-22.5488599467516 -9.8868078228061,-20.2939739520763 -40.9348534417948,21.3346905650032 -13.7027687368719,-15.9576547315471 25.1506514790688,-22.7223127155725 53.161207906202,17.9878156946362 23.0581302551343,-44.3991657040349 -12.7555614177337,-7.8495762570669 -23.3034295131673,24.7752250613675 -32.9314248841977,-10.1799193664162 6.4391052733844,-26.6149694316447 67.9478945110877,-20.8504369438355 -19.1729253550889,-37.2875398833473 17.6921824197595,-27.0586319361019 -1.2141693817481,-35.03745930187546 -22.0803127573614,-43.13523787124591 -17.6615465877195,-18.52009399128923 -2.2076933234648,97.50645511970159 -60.2209678789598,-72.24063152893663 2.820941468872,71.13678486720394 25.7564221070911,33.3606991101369 44.6444649856246,-0.1226496290818 6.5004303413137,23.7940280417889 -50.7488065453308,11.0781376904448 -24.5435668011448,-47.7862378354451 -43.6233713815401,-11.5346091326938 3.8159606974386,-64.52442986794669 -43.3631922052915,-7.97882736577365 -18.520438714559,54.02456843441705 -77.5145655385368,-16.4350502882341 -32.8701005764679,-50.77694641290264 z"
+     id="path3618"
+     inkscape:connector-curvature="0" /><path
+     style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+     d="m 226.1659160260771,77.89429992256862 8.3422274201404,40.74413641527248 15.4372964250838,-4.1628664517079 -5.5504886022773,-36.77198699008739 z"
+     id="path3620"
+     inkscape:connector-curvature="0" /><path
+     style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+     d="m 378.6473943366074,85.6824102618192 -6.9381107528467,32.7825733072006 20.1205211832554,6.0708469087408 4.6832247581715,-38.33306190947791 z"
+     id="path3622"
+     inkscape:connector-curvature="0" /></svg>
