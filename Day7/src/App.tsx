@@ -109,7 +109,7 @@ function App() {
       }
 
       if (partTwoFuel < partTwoBest.fuel) {
-        partTwoBest = { alignment, fuel: partTwoFuel };
+        partTwoBest = { alignment: i, fuel: partTwoFuel };
       }
     }
 
