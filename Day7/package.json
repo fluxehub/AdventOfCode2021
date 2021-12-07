@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
+    "prebuild": "[[ $CI = true ]] && npx pnpm@3 install --store=node_modules/.pnpm-store || echo skiping pnpm install",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
