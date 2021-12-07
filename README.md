@@ -13,6 +13,8 @@ Day 5 - [Racket](https://github.com/clavierpaul/AdventOfCode2021/tree/main/Day5)
 
 Day 6 - [C](https://github.com/clavierpaul/AdventOfCode2021/tree/main/Day6)
 
+Day 7 - [React + TypeScript)(https://github.com/clavierpaul/AdventOfCode2021/tree/main/Day7) [View here!](https://crabcalc.clavier.uk)
+
 Languages left:
 - C
 - C#
@@ -21,7 +23,6 @@ Languages left:
 - Go
 - Haskell
 - Java
-- JavaScript
 - Julia
 - Kotlin
 - LaTeX
