@@ -72,25 +72,25 @@ function App() {
   };
 
   return (
-    <Stack>
+    <Stack w="100%" p={4}>
       <Heading as="h1" size="3xl" mb={8}>
         Day 7 - Crab Calculator
       </Heading>
-      <Stack direction={["column", "row"]} spacing="24px">
+      <Stack direction={{ base: "column", xl: "row" }} spacing="24px">
         <Stack>
           <Heading as="h2" size="md" mb={2}>
             Input
           </Heading>
           <Textarea
-            w={500}
-            h={400}
+            w={{ base: "100%", xl: "500px" }}
+            h={{ base: "30vh", xl: "400px" }}
             placeholder="Initial crab positions"
             value={input}
             onChange={changeInput}
           />
         </Stack>
-        <Stack spacing={4}>
-          <Heading as="h2" size="md">
+        <Stack>
+          <Heading as="h2" size="md" mb={2}>
             Result
           </Heading>
           <Results

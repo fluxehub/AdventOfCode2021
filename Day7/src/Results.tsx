@@ -36,7 +36,7 @@ const ResultCard = (props: ResultCardProps) => (
     <Heading as="h3" size="sm" color="white" fontWeight={600} opacity={0.7}>
       {props.title}
     </Heading>
-    <Heading as="h4" color="white" fontSize="4xl">
+    <Heading as="h4" color="white" fontSize="4xl" opacity={1}>
       Best alignment: {props.result.alignment}
     </Heading>
     <Text color="white" opacity={0.9} fontWeight={600} fontSize="xl">
@@ -45,46 +45,33 @@ const ResultCard = (props: ResultCardProps) => (
   </Stack>
 );
 
-export const Results = (props: ResultsProps) => {
+const Inner = (props: ResultsProps) => {
   switch (props.state) {
     case State.Empty:
       return (
-        <Box w={500} h={400}>
-          <Text as="h3" size="sm" mb={2} fontWeight={600} w={400} opacity={0.3}>
-            Result will appear here...
-          </Text>
-        </Box>
+        <Text as="h3" size="sm" mb={2} fontWeight={600} opacity={0.3}>
+          Result will appear here...
+        </Text>
       );
     case State.Error:
       return (
-        <Box w={500} h={400}>
-          <Text
-            as="h3"
-            size="sm"
-            mb={2}
-            color="red.500"
-            fontWeight={600}
-            w={400}
-          >
-            Error in input
-          </Text>
-        </Box>
+        <Text as="h3" size="sm" mb={2} color="red.500" fontWeight={600}>
+          Error in input
+        </Text>
       );
     case State.Pending:
       return (
-        <Flex w={500} h={400} align="center" justify="center">
-          <Spinner
-            thickness="4px"
-            speed="0.65s"
-            emptyColor="gray.200"
-            color="blue.500"
-            size="xl"
-          />
-        </Flex>
+        <Spinner
+          thickness="4px"
+          speed="0.65s"
+          emptyColor="gray.200"
+          color="blue.500"
+          size="xl"
+        />
       );
     case State.Ready:
       return (
-        <Stack w={500} h={400}>
+        <Stack w="100%" h="100%">
           <ResultCard
             title={props.titles[0]}
             result={props.results![0]}
@@ -97,3 +84,14 @@ export const Results = (props: ResultsProps) => {
       );
   }
 };
+
+export const Results = (props: ResultsProps) => (
+  <Flex
+    w={{ base: "100%", xl: "500px" }}
+    h={400}
+    align="center"
+    justify="center"
+  >
+    <Inner {...props} />
+  </Flex>
+);
