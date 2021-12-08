@@ -27,11 +27,10 @@ Languages left:
 - Kotlin
 - LaTeX
 - RISC-V Assembly
-- OCaml
 - Perl
 - PHP
 - Python
-- Racket
 - Rust
+- Scala
 - Swift
 - Visual Basic
